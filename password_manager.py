@@ -1,32 +1,3 @@
-#!/usr/bin/env python3
-"""
-vault.py - simple CLI password manager with AES-256-GCM encryption and JSON storage.
-
-Usage examples:
-  Initialize a new vault:
-    python vault.py init --file vault.json
-
-  Add an entry:
-    python vault.py add --file vault.json
-
-  List entries (shows entry IDs and decrypted site names):
-    python vault.py list --file vault.json
-
-  Get an entry (shows username/password/notes):
-    python vault.py get --file vault.json --id <entry-id>
-
-  Update an entry:
-    python vault.py update --file vault.json --id <entry-id>
-
-  Delete an entry:
-    python vault.py delete --file vault.json --id <entry-id>
-
-  Change master password:
-    python vault.py changemaster --file vault.json
-
-All prompts for master password are hidden.
-"""
-
 import argparse
 import base64
 import json
